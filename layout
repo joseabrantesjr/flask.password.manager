@@ -1,0 +1,19 @@
+flask.secure.password/
+    ├── uploads/    
+    ├── app/
+    │   ├── __init__.py
+    │   ├── secrect.key.generator.py
+    │   ├── secret.key
+    |   ├── config.py
+    │   ├── routes.py
+    │   ├── models.py
+    │   └── templates/
+    │       ├── index.html
+    │       ├── add_password.html
+    │       ├── view_password.html
+    │       ├── edit_password.html
+    │       ├── edit_password_name.html
+    │       └── edit_password_username.html
+    ├── run.py 
+    ├── requirements.txt
+    ├── README.md
