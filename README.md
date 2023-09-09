@@ -10,7 +10,11 @@ To install **Password Manager**, follow these steps:
 
 1. Install Python and pip on your system.
 
-2. Clone this repository using the `git clone https://github.com/joseabrantesjr/flask.password.manager.git` command.
+2. Clone this repository using the 
+``` bash
+git clone https://github.com/joseabrantesjr/flask.password.manager.git
+```
+command.
 
 3. Create and activate a virtual environment (venv)
 
@@ -18,7 +22,7 @@ Step 1:
 In the terminal, use the python -m venv command to create a virtual environment. Replace <environment_name> with the desired name for your virtual environment.
 
 ```bash
-python -m venv <environment_name>
+python -m venv venv
 ```
 Step 2: Activate the Virtual Environment
 
@@ -27,24 +31,37 @@ After creating the virtual environment, you need to activate it to use it for yo
 On Windows:
 
 ```bash
-<environment_name>\Scripts\activate
+venv\Scripts\activate
 ```
 No macOS e Linux:
 
 ```bash
-source <environment_name>/bin/activate
+source venv/bin/activate
 ```
 
 
-4. Enter the root directory of the project and run `pip install -r requirements.txt` to install all the necessary dependencies.
+4. Enter the root directory of the project and run 
+``` bash
+pip install -r requirements.txt
+``` 
+or `pip3 install -r requirements.txt`
+to install all the necessary dependencies.
 
-5. Open the app folder and run python `secret.key.generator.py`, a security key will be generated so you can insert it in the config.py file (SECRET_KEY = b' insert the secret key here ')
+5. Open the app folder and run python 
+``` bash
+python secret.key.generator.py
+```
+, a security key will be generated so you can insert it in the config.py file (SECRET_KEY = b' insert the secret key here ')
 
-6. Run `python run.py` or `python3 run.py` to start the Flask development server.
+6. Run 
+``` bash
+python run.py
+``` 
+or `python3 run.py` to start the Flask development server.
 
 # Usage
 
-To use **Password Manager**, open a command line interface or terminal and navigate to the root folder of the project. Run `python run.py` to start the Flask development server. Then open a browser and go to `http://localhost:5000/` to access the application.
+To use **Password Manager**, open a command line interface or terminal and navigate to the root folder of the project. Run `python run.py` or `python3 run.py` to start the Flask development server. Then open a browser and go to `http://localhost:5000/` to access the application.
 
 ## Functions
 
