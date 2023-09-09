@@ -13,7 +13,7 @@ To install **Password Manager**, follow these steps:
 2. Clone this repository using the command.
 
 ``` bash
-git clone https://github.com/joseabrantesjr/flask.password.manager.git
+git clone https://github.com/joseabrantesjr/flask.password.manager
 ```
 
 3. Create and activate a virtual environment (venv)
