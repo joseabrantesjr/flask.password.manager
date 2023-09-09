@@ -8,7 +8,11 @@
 
 To install **Password Manager**, follow these steps:
 
-1. Create and activate a virtual environment (venv)
+1. Install Python and pip on your system.
+
+2. Clone this repository using the `git clone https://github.com/joseabrantesjr/flask.password.manager.git` command.
+
+3. Create and activate a virtual environment (venv)
 
 Step 1:
 In the terminal, use the python -m venv command to create a virtual environment. Replace <environment_name> with the desired name for your virtual environment.
@@ -31,13 +35,12 @@ No macOS e Linux:
 source <environment_name>/bin/activate
 ```
 
-2. Install Python and pip on your system.
-
-3. Clone this repository using the `git clone https://github.com/joseabrantesjr/flask.password.manager.git` command.
 
 4. Enter the root directory of the project and run `pip install -r requirements.txt` to install all the necessary dependencies.
 
-5. Run `python run.py` or `python3 run.py` to start the Flask development server.
+5. Open the app folder and run python `secret.key.generator.py`, a security key will be generated so you can insert it in the config.py file (SECRET_KEY = b' insert the secret key here ')
+
+6. Run `python run.py` or `python3 run.py` to start the Flask development server.
 
 # Usage
 
