@@ -9,14 +9,39 @@
 To install **Password Manager**, follow these steps:
 
 1. Create and activate a virtual environment (venv)
+
+Step 1:
+In the terminal, use the python -m venv command to create a virtual environment. Replace <environment_name> with the desired name for your virtual environment.
+
+```bash
+python -m venv <environment_name>
+```
+Step 2: Activate the Virtual Environment
+
+After creating the virtual environment, you need to activate it to use it for your project. The method for activating the environment depends on your operating system.
+
+On Windows:
+
+```bash
+<environment_name>\Scripts\activate
+```
+No macOS e Linux:
+
+```bash
+source <environment_name>/bin/activate
+```
+
 2. Install Python and pip on your system.
-3. Clone this repository using the `git clone https://github.com/your-container/password-manager.git` command.
+
+3. Clone this repository using the `git clone https://github.com/joseabrantesjr/flask.password.manager.git` command.
+
 4. Enter the root directory of the project and run `pip install -r requirements.txt` to install all the necessary dependencies.
-5. Run `python run.py` to start the Flask development server.
 
-## Usage
+5. Run `python run.py` or `python3 run.py` to start the Flask development server.
 
-To use **Password Manager**, open a command line interface or terminal and navigate to the root folder of the project. Run `python app.py` to start the Flask development server. Then open a browser and go to `http://localhost:5000/` to access the application.
+# Usage
+
+To use **Password Manager**, open a command line interface or terminal and navigate to the root folder of the project. Run `python run.py` to start the Flask development server. Then open a browser and go to `http://localhost:5000/` to access the application.
 
 ## Functions
 
@@ -38,4 +63,4 @@ Everyone is welcome to contribute to **Password Manager**. If you find any bugs 
 
 ## License
 
-**Password Manager** is licensed under the GNU General Public License. You can read the full license at [https://www.gnu.org/licenses/gpl.html](https://www.gnu.org/licenses/gpl.html).
+**Password Manager** is licensed under the MIT License. You can read the full license at [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT).
