@@ -1,6 +1,13 @@
-# The code is importing the `os` module, which provides a way to interact with the operating system.
 import os
+from dotenv import load_dotenv
 
-# Run the secret.key.generate.py script to generate a new secret key.
-SECRET_KEY = b' '
-SQLALCHEMY_DATABASE_URI = 'sqlite:///passwords.db'
+try:
+    load_dotenv()
+except Exception as e:
+    print(f"Error loading .env file: {e}")
+
+# Access the variables
+SECRET_KEY = os.getenv("SECRET_KEY")
+SQLALCHEMY_DATABASE_URI = os.getenv("SQLALCHEMY_DATABASE_URI")
+
+# Now you can use SECRET_KEY and SQLALCHEMY_DATABASE_URI in your application
