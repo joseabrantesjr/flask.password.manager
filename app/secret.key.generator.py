@@ -5,8 +5,7 @@ from cryptography.fernet import Fernet
 
 # `key = Fernet.generate_key()` is generating a new key for the Fernet encryption algorithm. Fernet is
 # a symmetric encryption algorithm that uses the AES encryption algorithm in CBC mode with a 128-bit
-# key. The `generate_key()` function generates a random 32-byte key that is suitable for use with
-# Fernet.
+# key. 
 key = Fernet.generate_key()
 
 # The code `with open("app/Secret.key", "wb") as key_file: key_file.write(key)` is opening a file
