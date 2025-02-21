@@ -12,5 +12,5 @@ key = Fernet.generate_key()
 # named "Secret.key" in binary write mode ("wb"). It then writes the contents of the `key` variable to
 # the file. The `with` statement ensures that the file is properly closed after the write operation is
 # complete.
-with open("app/Secret.key", "wb") as key_file:
+with open("Secret.key", "wb") as key_file:
     key_file.write(key)

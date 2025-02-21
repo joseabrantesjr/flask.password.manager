@@ -39,20 +39,20 @@ On macOS e Linux:
 source venv/bin/activate
 ```
 
+4. Open the key folder and run python 
+``` bash
+python key.py
+```
+or `python3 key.py`
+, a security key will be generated so you can insert it in the .env file (SECRET_KEY="YOUR SECRET KEY HERE"
+)
 
-4. Enter the root directory of the project and run 
+5. Enter the root directory of the project and run 
 ``` bash
 pip install -r requirements.txt
 ``` 
 or `pip3 install -r requirements.txt`
 to install all the necessary dependencies.
-
-5. Open the app folder and run python 
-``` bash
-python secret.key.generator.py
-```
-or `python3 secret.key.generator.py`
-, a security key will be generated so you can insert it in the config.py file (SECRET_KEY = b' insert the secret key here ')
 
 6. Run 
 ``` bash
