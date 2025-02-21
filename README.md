@@ -51,8 +51,16 @@ to install all the necessary dependencies.
 python key.py
 ```
 or `python3 key.py`
-, a security key will be generated so you can insert it in the .env file (SECRET_KEY="YOUR SECRET KEY HERE"
-)
+
+This will generate a secure key. Copy this key and store it in a safe location.
+
+In the .env file add:
+
+``` bash
+SECRET_KEY="YOUR SECRET KEY HERE"
+```
+⚠ Important: Never share this key publicly.
+
 
 6. Run 
 ``` bash
@@ -77,6 +85,10 @@ To use **Password Manager**, open a command line interface or terminal and navig
 ## Security
 
 Security is an important concern for **Password Manager**. Therefore, the application uses the Fernet library to encrypt passwords before storing them in the database. In addition, the application uses HTTPS to ensure that information is transmitted securely between the client and the server.
+
+The SECRET_KEY key is essential for decrypting passwords.
+If the key is lost or changed, all previously saved passwords will be inaccessible.
+For additional security, delete the key from the .env file after use and store it in a safe location.
 
 ## Contributions
 

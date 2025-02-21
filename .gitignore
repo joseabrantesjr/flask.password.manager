@@ -1,1 +1,4 @@
 app/__pycache__
+app/.DS_Store
+instance
+key/Secret.key
