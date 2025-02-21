@@ -99,4 +99,4 @@ Contributions are welcome! If you'd like to improve **Password Manager**, follow
 
 **Password Manager** is licensed under the **MIT License**.
 
-[Read the full license](https://opensource.org/licenses/MIT).
+[Read the full license](https://github.com/joseabrantesjr/flask.password.manager/blob/main/LICENSE).
